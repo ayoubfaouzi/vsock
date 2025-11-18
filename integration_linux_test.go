@@ -17,9 +17,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ayoubfaouzi/vsock"
+	"github.com/ayoubfaouzi/vsock/internal/vsutil"
 	"github.com/google/go-cmp/cmp"
-	"github.com/mdlayher/vsock"
-	"github.com/mdlayher/vsock/internal/vsutil"
 	"golang.org/x/net/nettest"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/sys/unix"
@@ -208,7 +208,7 @@ func TestIntegrationConnDialNoListener(t *testing.T) {
 	// error rather than hanging. This mostly relies on changes to the
 	// underlying socket library, but we test it anyway to lock things in.
 	//
-	// See: https://github.com/mdlayher/vsock/issues/47.
+	// See: https://github.com/ayoubfaouzi/vsock/issues/47.
 	const max = math.MaxUint32
 	for _, port := range []uint32{max - 2, max - 1, max} {
 		_, err := vsock.Dial(vsock.Local, port, nil)

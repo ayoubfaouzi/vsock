@@ -1,4 +1,4 @@
-# vsock [![Test Status](https://github.com/mdlayher/vsock/workflows/Linux%20Test/badge.svg)](https://github.com/mdlayher/vsock/actions) [![Go Reference](https://pkg.go.dev/badge/github.com/mdlayher/vsock.svg)](https://pkg.go.dev/github.com/mdlayher/vsock)  [![Go Report Card](https://goreportcard.com/badge/github.com/mdlayher/vsock)](https://goreportcard.com/report/github.com/mdlayher/vsock)
+# vsock [![Test Status](https://github.com/ayoubfaouzi/vsock/workflows/Linux%20Test/badge.svg)](https://github.com/ayoubfaouzi/vsock/actions) [![Go Reference](https://pkg.go.dev/badge/github.com/ayoubfaouzi/vsock.svg)](https://pkg.go.dev/github.com/ayoubfaouzi/vsock)  [![Go Report Card](https://goreportcard.com/badge/github.com/ayoubfaouzi/vsock)](https://goreportcard.com/report/github.com/ayoubfaouzi/vsock)
 
 Package `vsock` provides access to Linux VM sockets (`AF_VSOCK`) for
 communication between a hypervisor and its virtual machines.  MIT Licensed.

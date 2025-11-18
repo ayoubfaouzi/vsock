@@ -16,24 +16,24 @@ on older versions of Go must use v1.1.1.**
 
 **This is the last release of package vsock that supports Go 1.17 and below.**
 
-- [Bug Fix] [commit](https://github.com/mdlayher/vsock/commit/ead86435c244d5d6baad549a6df0557ada3f4401):
+- [Bug Fix] [commit](https://github.com/ayoubfaouzi/vsock/commit/ead86435c244d5d6baad549a6df0557ada3f4401):
   fix build on non-UNIX platforms such as Windows. This is a no-op change on
   Linux but provides a friendlier experience for non-Linux users.
 
 ## v1.1.0
 
-- [New API] [commit](https://github.com/mdlayher/vsock/commit/44cd82dc5f7de644436f22236b111ab97fa9a14f):
+- [New API] [commit](https://github.com/ayoubfaouzi/vsock/commit/44cd82dc5f7de644436f22236b111ab97fa9a14f):
   `vsock.FileListener` can be used to create a `vsock.Listener` from an existing
   `os.File`, which may be provided by systemd socket activation or another
   external mechanism.
 
 ## v1.0.1
 
-- [Bug Fix] [commit](https://github.com/mdlayher/vsock/commit/99a6dccdebad21d1fa5f757d228d677ccb1412dc):
+- [Bug Fix] [commit](https://github.com/ayoubfaouzi/vsock/commit/99a6dccdebad21d1fa5f757d228d677ccb1412dc):
   upgrade `github.com/mdlayher/socket` to handle non-blocking `connect(2)`
   errors (called in `vsock.Dial`) properly by checking the `SO_ERROR` socket
   option. Lock in this behavior with a new test.
-- [Improvement] [commit](https://github.com/mdlayher/vsock/commit/375f3bbcc363500daf367ec511638a4655471719):
+- [Improvement] [commit](https://github.com/ayoubfaouzi/vsock/commit/375f3bbcc363500daf367ec511638a4655471719):
   downgrade the version of `golang.org/x/net` in use to support Go 1.12. We
   don't need the latest version for this package.
 
